@@ -9,3 +9,7 @@ Ring data structure implemented by golang.
 
 ## RingGet
  Get a node by timestamp.
+
+
+## 中文
+ring是一个消息环，以秒级存储，例如，在过去一秒钟内发生了两个消息，那么这两个消息依次存储在同一个node的eventlist中，一个ring最大的node数在初始化时确定，如果每个node都已经填满，则使用最旧最老的那个node存储最新的消息。，
